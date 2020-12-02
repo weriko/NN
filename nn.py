@@ -1,6 +1,6 @@
 import numpy as np
 
-np.random.seed(1)
+
 #Added logistic
 #Add regressor
 class NeuralNetwork:
@@ -215,12 +215,7 @@ xpred = np.array([[457,435],
              [8,4],
              [7,3],
              [9,6]]).T
-
-#NN.fit(x,y,epochs=20)
-#print(NN.predict(xpred))
+NN.fit(x,y,epochs=20)
+print(NN.predict(xpred))
 #print(NN.W)
-ytest = np.array([[4,6,7],[3,5,6]])
-ytest2 = np.array([[6,4,7],[6,8,5]])
-print(NN.mean_absolute_error(ytest,ytest2))
-
         
